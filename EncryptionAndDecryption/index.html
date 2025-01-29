@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Encryption and Decryption</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text Encryption and Decryption</h1>
+
+
+        <label for="inputText">Enter Text:</label>
+        <textarea id="inputText" rows="4" placeholder="Enter your text here..."></textarea>
+
+
+        <label for="algorithmSelect">Select Algorithm:</label>
+        <select id="algorithmSelect">
+            <option value="caesar">Caesar Cipher</option>
+            <option value="base64">Base64</option>
+            <option value="aes">AES</option>
+        </select>
+
+
+        <label for="keyInput">Enter Key/Shift (if applicable):</label>
+        <input type="text" id="keyInput" placeholder="Enter key or shift value">
+
+
+        <div class="button-group">
+            <button id="encryptBtn">Encrypt</button>
+            <button id="decryptBtn">Decrypt</button>
+        </div>
+
+
+        <label for="outputText">Result:</label>
+        <textarea id="outputText" rows="4" readonly></textarea>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</body>
+</html>
